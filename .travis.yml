@@ -12,11 +12,11 @@ script:
 
 deploy:
   provider: elasticbeanstalk
-  region: "us-east-1" ### AWS region of your choice
-  app: "react-app" ### Your EB App name
-  env: "Reactapp-env-1" ### Your EB App environment name
-  bucket_name: "elasticbeanstalk-us-east-1-026376606405" ### S3 bucket name
-  bucket_path: "EBApptest" ### S3 folder name under S3 bucket above
+  region: "us-east-1" 
+  app: "react-app" 
+  env: "Reactapp-env"
+  bucket_name: "elasticbeanstalk-us-east-1-026376606405" 
+  bucket_path: "EBApptest" 
   on:
     branch: main
   access_key_id: "$AWS_ACCESS_KEY"
